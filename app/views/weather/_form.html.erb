@@ -1,0 +1,11 @@
+<div class="home">
+  <h1>Know About Weather</h1>
+  <%= form_tag("/weather", method: "post") do %>
+    <%= label_tag :enter_the_location %><br>
+    <%= text_field_tag :location %>
+    <br><br>
+    <p>
+      <%= submit_tag("Submit") %>
+    </p>
+  <% end %>
+</div>
